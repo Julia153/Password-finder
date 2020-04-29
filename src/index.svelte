@@ -7,11 +7,11 @@
   function findWord() {
     console.log(`Searching for '${word}'...`)
     // reset 
-    result = "not found"
+    result = `Not found after ${wordlist.length} searches`
     // search the word list for the word.
     for (let i = 0; i < wordlist.length; i++ ) {
         if (wordlist[i] === word) {
-            result = `Found it!`;
+            result = `Found it after ${[i]} searches`;
         }
     }
   }
